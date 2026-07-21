@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html><head><link rel="stylesheet" href="https://s.brightspace.com/lib/fonts/0.6.1/fonts.css"></head><body style="color: rgb(32, 33, 34); font-family: verdana, sans-serif; font-size: 12px;"><div class="container-fluid">
+<div class="row">
+<div class="col-12 banner-img">
+<p><span style="font-size: 16px;"><img src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/img/banner_03.jpg" alt="banner"></span></p>
+</div>
+<div class="col-sm-10 offset-sm-1">
+<h2 style="text-align: center;"><strong>CONTEXT ENGINEERING</strong></h2>
+<h3>Why You Are Learning This</h3>
+<p>This section helps you understand <strong>why LLM outputs fail even when prompts look reasonable</strong>, and how better use of context can reduce those failures.</p>
+<p>It prepares you to:</p>
+<p>• Critique LLM outputs more effectively<br>• Recognise when an LLM answer is unreliable due to missing or poor context<br>• Improve prompts without making them longer or more complex<br>• Explain LLM limitations clearly in your project and presentation</p>
+<p>As LLM adoption increases, analysts are expected to understand not only:</p>
+<p>✓ How to ask questions<br>✓ But what information the model actually needs<br>✓ Why the same prompt can give different quality answers<br>✓ Why human judgement is still required</p>
+<p>This eLearning focuses on <strong>thinking skills</strong>, not prompt tricks.</p>
+<hr>
+<h2><span style="color: #cd2026;"><strong>Curated Reading</strong></span></h2>
+<p><strong>Context Engineering: Why Prompts Fail and How to Fix Them</strong><br>(DataCamp, 2025)<br><a href="https://www.datacamp.com/blog/context-engineering">https://www.datacamp.com/blog/context-engineering</a></p>
+<hr>
+<h2><strong>1. What Is Context Engineering?</strong></h2>
+<h3>Standard definition</h3>
+<p>Context engineering is the practice of <strong>providing the right information, constraints, and framing</strong> so that an LLM can generate a useful and reliable response.</p>
+<p>Context includes:</p>
+<p>• Background information<br>• Constraints (what to include or exclude)<br>• Assumptions about the task<br>• The role the model is asked to play</p>
+<p>Prompt wording alone is not enough if the <strong>context is incomplete or misleading</strong>.</p>
+<hr>
+<h2><strong>2. Common Context Failures</strong></h2>
+<p>The article highlights that many LLM errors come from <strong>context failure</strong>, not model weakness.</p>
+<h3>a. Missing context</h3>
+<p>The model is asked to answer, but does not know:</p>
+<p>• the business goal<br>• the intended user<br>• how the output will be used</p>
+<p>Result:</p>
+<p>• Vague answers<br>• Generic advice<br>• Technically correct but useless responses</p>
+<hr>
+<h3>b. Ambiguous context</h3>
+<p>The model is given information, but it is unclear or conflicting.</p>
+<p>Look for:</p>
+<p>• Multiple possible interpretations<br>• Unclear scope (“optimise”, “improve”, “best”)<br>• No definition of success</p>
+<p>Result:</p>
+<p>• Overconfident but wrong answers<br>• Assumptions that do not match the real problem</p>
+<hr>
+<h3>c. Irrelevant or excessive context</h3>
+<p>More information is not always better.</p>
+<p>Problems occur when:</p>
+<p>• Too much unrelated data is included<br>• The model cannot tell what matters<br>• Important signals are buried in noise</p>
+<p>Result:</p>
+<p>• Distracted responses<br>• Focus on the wrong factors<br>• Lower output quality</p>
+<hr>
+<h3>d. Context mismatch with reality</h3>
+<p>The context provided does not reflect real-world conditions.</p>
+<p>Examples:</p>
+<p>• Training-like assumptions applied to deployment<br>• Clean data assumptions in messy environments<br>• Ignoring operational constraints</p>
+<p>Result:</p>
+<p>• Answers that sound good but fail in practice</p>
+<hr>
+<h2><strong>3. Why Context Failures Matter in ADALL</strong></h2>
+<p>In this module:</p>
+<p>• You use LLMs to frame modelling objectives<br>• You critique AI-generated answers<br>• You justify modelling and deployment decisions</p>
+<p>Context failures lead to:</p>
+<p>• Poor modelling objectives<br>• Wrong target variables<br>• Inappropriate metrics<br>• Weak or misleading project justifications</p>
+<p>This is why <strong>LLM critique is graded</strong>, not just LLM usage.</p>
+<hr>
+<h2><strong>4. Techniques to Mitigate Context Failures</strong></h2>
+<p>The article suggests <strong>context control</strong>, not longer prompts.</p>
+<h3>a. Clarify the task role</h3>
+<p>Tell the model <em>who it is</em> and <em>what it is doing</em>.</p>
+<p>Example:</p>
+<p>• “You are advising a pricing analyst”<br>• “Focus on problem framing, not algorithms”</p>
+<hr>
+<h3>b. Define constraints explicitly</h3>
+<p>State what the model should <strong>not</strong> do.</p>
+<p>Examples:</p>
+<p>• “Do not suggest deep learning”<br>• “Do not assume access to future data”</p>
+<p>This reduces hallucinated or irrelevant content.</p>
+<hr>
+<h3>c. Provide decision context</h3>
+<p>Explain how the output will be used.</p>
+<p>Examples:</p>
+<p>• “This will be used to justify a model choice to management”<br>• “This is for an academic project, not production deployment”</p>
+<p>This improves relevance and tone.</p>
+<hr>
+<h3>d. Ask for structure, not prose</h3>
+<p>Structured outputs reduce ambiguity.</p>
+<p>Examples:</p>
+<p>• Bullet points<br>• Lists<br>• Tables<br>• Explicit sections</p>
+<p>This makes critique easier and safer.</p>
+<p></p>
+<p>Read more: <a href="https://claude.ai/public/artifacts/f498a4cc-4c45-481c-a6dd-8e1d196dadb0">Complete Context Engineering Guide | Claude</a> &nbsp;</p>
+<hr>
+<h2><strong>5. Why Human Judgement Still Matters</strong></h2>
+<p>The article emphasises:</p>
+<p>• LLMs do not know what is “important” unless told<br>• LLMs cannot judge business impact on their own<br>• Context design is a human responsibility</p>
+<p>LLMs generate text.<br><strong>You decide whether it makes sense.</strong></p>
+<p>This directly links to:</p>
+<p>✓ Modelling objective quality<br>✓ Deployment readiness<br>✓ Stakeholder communication<br>✓ Project evaluation criteria</p>
+<hr>
+<h2><strong>Key Takeaway for You</strong></h2>
+<p>Context engineering is not about clever prompts.</p>
+<p>It is about:</p>
+<p>• Giving the right information<br>• Removing ambiguity<br>• Limiting assumptions<br>• Thinking before asking</p>
+<p>In ADALL, we want you to takeaway that good data analyst and prompt engineers are not those who get long AI answers, but those who can say:</p>
+<blockquote>
+<p>“This response looks reasonable, but here is what is missing or risky.”</p>
+</blockquote>
+<p>That skill matters in the lab, the practical test, and especially in your project.</p>
+<hr></div>
+<div class="col-12"></div>
+</div>
+</div>
+<p><span style="font-size: 16px;">
+<script src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+<script src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/popper-js/popper.min.js"></script>
+<script src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+</span></p>
+<p><span style="font-size: 16px;"><!-- Template JavaScript --></span></p>
+<p><span style="font-size: 16px;">
+<script src="/shared/HTML-Template-Library/HTML-Templates-V3/pages/../_assets/js/scripts.min.js"></script>
+</span></p></body></html>
